@@ -4,7 +4,7 @@ import { cn } from '../lib/utils';
 
 export default function History({ tasks, onDeleteTask, onExport, onClearAll, onShowArchive }) {
   return (
-    <div className="flex-1 flex flex-col bg-slate-50/40 dark:bg-slate-950/20">
+    <div className="flex-1 flex flex-col bg-slate-50/40 dark:bg-slate-950">
       <div className="px-8 py-6 flex items-center justify-between border-b border-slate-100 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm sticky top-0 z-10">
         <div className="flex items-center gap-3">
           <h2 className="text-lg font-bold text-slate-800 dark:text-slate-200 tracking-tight flex items-center gap-2">

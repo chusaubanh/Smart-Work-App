@@ -196,18 +196,18 @@ function App() {
     <div className="flex h-screen bg-slate-50 text-slate-700 overflow-hidden">
       <Sidebar />
       
-      <main className="flex-1 flex flex-col min-w-0">
-        <header className="h-[72px] bg-white border-b border-slate-100 flex justify-between items-center px-8 shrink-0">
+      <main className="flex-1 flex flex-col min-w-0 bg-white dark:bg-slate-950">
+        <header className="h-[72px] bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center px-8 shrink-0">
           <div className="flex items-center gap-2">
-             <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-500 flex items-center justify-center">
+             <div className="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 text-emerald-500 flex items-center justify-center">
                 <Zap className="w-4 h-4 fill-current" />
              </div>
-             <h2 className="font-bold text-slate-800 tracking-tight">Phiên Làm Việc</h2>
+             <h2 className="font-bold text-slate-800 dark:text-slate-100 tracking-tight">Phiên Làm Việc</h2>
           </div>
           <div className="flex items-center gap-3">
              <button 
                onClick={() => setDarkMode(!darkMode)}
-               className="p-2.5 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-colors dark:hover:bg-slate-800 dark:hover:text-slate-200"
+               className="p-2.5 text-slate-400 hover:text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 dark:hover:text-slate-200 rounded-lg transition-colors"
              >
                {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
              </button>
