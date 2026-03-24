@@ -13,19 +13,19 @@ export default function Timer({
   const { isRunning, elapsedTime, displayTime } = timerState;
 
   return (
-    <div className="w-[420px] p-8 border-r border-slate-100 flex flex-col bg-white">
-      <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-6">
+    <div className="w-[420px] p-8 border-r border-slate-100 dark:border-slate-800 flex flex-col bg-white dark:bg-slate-900">
+      <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-6">
         <ClipboardList className="w-3.5 h-3.5" />
         Thông tin nhiệm vụ
       </div>
 
       <div className="space-y-5">
         <div className="space-y-1.5">
-          <label className="text-[13px] font-bold text-slate-700 ml-1">Tên nhiệm vụ</label>
+          <label className="text-[13px] font-bold text-slate-700 dark:text-slate-300 ml-1">Tên nhiệm vụ</label>
           <input 
             type="text" 
             placeholder="VD: Lên kịch bản nội dung..."
-            className="input-field"
+            className="input-field dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:focus:bg-slate-800"
             value={taskData.name}
             onChange={(e) => setTaskData({ ...taskData, name: e.target.value })}
             disabled={isRunning}
@@ -33,11 +33,11 @@ export default function Timer({
         </div>
 
         <div className="space-y-1.5">
-          <label className="text-[13px] font-bold text-slate-700 ml-1">Chi tiết công việc <span className="text-slate-400 font-normal">(Bắt buộc)</span></label>
+          <label className="text-[13px] font-bold text-slate-700 dark:text-slate-300 ml-1">Chi tiết công việc <span className="text-slate-400 dark:text-slate-500 font-normal">(Bắt buộc)</span></label>
           <textarea 
             rows="3"
             placeholder="VD: Viết kịch bản đoạn 1..."
-            className="input-field resize-none"
+            className="input-field resize-none dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:focus:bg-slate-800"
             value={taskData.details}
             onChange={(e) => setTaskData({ ...taskData, details: e.target.value })}
             disabled={isRunning}
@@ -45,13 +45,13 @@ export default function Timer({
         </div>
 
         <div className="space-y-1.5">
-          <label className="text-[13px] font-bold text-slate-700 ml-1">Người thực hiện</label>
+          <label className="text-[13px] font-bold text-slate-700 dark:text-slate-300 ml-1">Người thực hiện</label>
           <div className="relative">
-            <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+            <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 dark:text-slate-500" />
             <input 
               type="text" 
               placeholder="Tên của bạn"
-              className="input-field pl-11"
+              className="input-field pl-11 dark:bg-slate-800 dark:border-slate-700 dark:text-white dark:focus:bg-slate-800"
               value={taskData.assignee}
               onChange={(e) => setTaskData({ ...taskData, assignee: e.target.value })}
               disabled={isRunning}
@@ -65,11 +65,11 @@ export default function Timer({
           "font-mono-jb text-[3.8rem] font-bold tracking-tighter transition-all duration-500",
           isRunning 
             ? "bg-gradient-to-br from-sky-deep via-teal-pastel to-mint-deep bg-clip-text text-transparent scale-110" 
-            : "text-slate-800"
+            : "text-slate-800 dark:text-slate-200"
         )}>
           {displayTime}
         </div>
-        <p className="text-[11px] text-slate-400 mt-2 font-medium">
+        <p className="text-[11px] text-slate-400 dark:text-slate-500 mt-2 font-medium">
           {isRunning ? "Đang ghi nhận thời gian..." : "Sẵn sàng để bắt đầu tập trung"}
         </p>
       </div>
@@ -87,14 +87,14 @@ export default function Timer({
           <>
             <button 
               onClick={onPause}
-              className="flex-1 bg-amber-100 text-amber-700 font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-amber-200 transition-colors"
+              className="flex-1 bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-amber-200 dark:hover:bg-amber-900/50 transition-colors"
             >
               {isRunning ? <Pause className="w-5 h-5 fill-current" /> : <Play className="w-5 h-5 fill-current" />}
               {isRunning ? "Tạm dừng" : "Tiếp tục"}
             </button>
             <button 
               onClick={onStop}
-              className="flex-[1.5] bg-rose-500 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-rose-600 transition-colors shadow-lg shadow-rose-200"
+              className="flex-[1.5] bg-rose-500 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-rose-600 transition-colors shadow-lg shadow-rose-200 dark:shadow-rose-900/20"
             >
               <Square className="w-5 h-5 fill-current" />
               Kết thúc & Lưu

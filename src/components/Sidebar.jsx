@@ -41,9 +41,9 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="w-[280px] min-w-[280px] bg-[#0c4a6e] bg-gradient-to-b from-[#0c4a6e] to-[#065f46] text-white p-6 flex flex-col h-screen border-r border-emerald-500/10">
-      <div className="flex items-center gap-3 pb-6 border-b border-white/10 mb-6">
-        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-pastel via-teal-pastel to-mint-pastel flex items-center justify-center shadow-lg shadow-sky-400/20">
+    <aside className="w-[280px] min-w-[280px] bg-[#0c4a6e] bg-gradient-to-b from-[#0c4a6e] to-[#065f46] dark:from-[#020617] dark:to-[#0f172a] text-white p-6 flex flex-col h-screen border-r border-emerald-500/10 dark:border-slate-800">
+      <div className="flex items-center gap-3 pb-6 border-b border-white/10 dark:border-white/5 mb-6">
+        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-pastel via-teal-pastel to-mint-pastel flex items-center justify-center shadow-lg shadow-sky-400/20 dark:shadow-none">
           <Bolt className="w-5 h-5 text-slate-900 fill-slate-900" />
         </div>
         <div>

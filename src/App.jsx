@@ -111,6 +111,20 @@ function App() {
     resetTimer();
   };
 
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem('swt_theme') === 'dark';
+  });
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('swt_theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('swt_theme', 'light');
+    }
+  }, [darkMode]);
+
   const resetTimer = () => {
     setIsRunning(false);
     setElapsedTime(0);
@@ -191,8 +205,11 @@ function App() {
              <h2 className="font-bold text-slate-800 tracking-tight">Phiên Làm Việc</h2>
           </div>
           <div className="flex items-center gap-3">
-             <button className="p-2.5 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-colors">
-               <Sun className="w-5 h-5" />
+             <button 
+               onClick={() => setDarkMode(!darkMode)}
+               className="p-2.5 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-lg transition-colors dark:hover:bg-slate-800 dark:hover:text-slate-200"
+             >
+               {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
              </button>
           </div>
         </header>
