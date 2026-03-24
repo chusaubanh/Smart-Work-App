@@ -2,71 +2,66 @@
 
 [Vietnamese version below] | [Bản tiếng Việt ở bên dưới]
 
-**Smart Work** has been rebuilt as a modern **ReactJS** application styled with **Tailwind CSS v4**. It offers a premium, high-performance experience for tracking work time and maintaining focus.
+**Smart Work** is a modern **ReactJS** application styled with **Tailwind CSS v3**. It offers a premium, high-performance experience for tracking work time and maintaining focus.
+
+---
+
+## 🏗️ New Repository
+- **URL**: [github.com/chusaubanh/Smart-Work-App](https://github.com/chusaubanh/Smart-Work-App)
+- **Live Site**: [Smart Work Live](https://chusaubanh.github.io/Smart-Work-App/)
 
 ---
 
 ## 🌟 Key Features
 
-- **⚛️ React Engine**: Fast, reactive state management for a seamless experience.
-- **🎨 Tailwind CSS v4**: Modern, utility-first styling with a custom pastel theme.
-- **⏱️ Precise Timer**: Millisecond-accurate tracking with Play/Pause/Stop functionality.
-- **🎵 Ambient Radio**: 6 ad-free SomaFM channels integrated directly into the sidebar.
-- **📂 Local Persistence**: Automatic saving to browser local storage.
-- **📊 CSV Export**: One-click professional report generation.
-- **📁 Archive & Backup**: Automatic session backups every time you clear or export.
-- **✨ Premium UI**: Uses *Plus Jakarta Sans* and *JetBrains Mono* fonts for a professional look.
+- **⚛️ React Engine**: Fast, reactive state management.
+- **🎨 Tailwind CSS v3**: Premium styling with a custom pastel theme.
+- **⏱️ Precise Timer**: Millisecond tracking with Pause/Resume.
+- **🎵 Ambient Radio**: 6 ad-free SomaFM channels integrated.
+- **📁 Auto-Archive**: Session backups on clear/export.
+- **✨ Premium UI**: Plus Jakarta Sans & JetBrains Mono.
 
 ## 🛠️ How to Run Locally
 
-1. **Install Dependencies**:
+1. **Navigate to the folder**:
    ```bash
-   npm install
+   cd d:\AI\Smart-Work-React
    ```
-2. **Start Development Server**:
-   ```bash
-   npm run dev
-   ```
-3. **Build for Production**:
-   ```bash
-   npm run build
-   ```
+2. **Easy Launcher**:
+   Double-click `Start_SmartWork.bat`. 
+   It will install everything and open: `http://localhost:5173/Smart-Work-App/`
 
 ---
 
 # 🚀 Smart Work - Trình Theo Dõi Công Việc (Bản React)
 
-**Smart Work** đã được tái cấu trúc hoàn toàn dưới dạng ứng dụng **ReactJS** hiện đại sử dụng **Tailwind CSS v4**. Ứng dụng mang đến trải nghiệm cao cấp, hiệu suất cao giúp bạn quản lý thời gian và tập trung làm việc.
+---
+
+## 🏗️ Repository Mới
+- **URL**: [github.com/chusaubanh/Smart-Work-App](https://github.com/chusaubanh/Smart-Work-App)
+- **Live Site**: [Smart Work App Live](https://chusaubanh.github.io/Smart-Work-App/)
 
 ---
 
 ## 🌟 Tính Năng Chính
 
-- **⚛️ React Engine**: Quản lý trạng thái (state) nhanh nhạy, mượt mà.
-- **🎨 Tailwind CSS v4**: Giao diện hiện đại với bảng màu Pastel tùy chỉnh.
-- **⏱️ Đồng hồ chính xác**: Theo dõi thời gian đến từng mili giây, hỗ trợ Tạm dừng/Tiếp tục.
-- **🎵 Ambient Radio**: 6 kênh radio SomaFM không quảng cáo tích hợp ngay thanh bên.
-- **📂 Lưu trữ cục bộ**: Tự động lưu dữ liệu vào local storage của trình duyệt.
-- **📊 Xuất CSV**: Trích xuất báo cáo chuyên nghiệp chỉ với một cú click.
-- **📁 Sao lưu tự động**: Hệ thống Archive tự động lưu lại phiên làm việc khi dọn dẹp hoặc xuất file.
-- **✨ Giao diện Premium**: Sử dụng font *Plus Jakarta Sans* và *JetBrains Mono*.
+- **⚛️ React Engine**: Quản lý trạng thái mượt mà.
+- **🎨 Tailwind CSS v3**: Giao diện Premium màu Pastel.
+- **⏱️ Đồng hồ chính xác**: Tạm dừng/Tiếp tục dễ dàng.
+- **🎵 Ambient Radio**: 6 kênh radio SomaFM không quảng cáo.
+- **📁 Sao lưu tự động**: Hệ thống Archive thông minh.
+- **✨ Giao diện Premium**: Font chữ hiện đại, cao cấp.
 
-## 🛠️ Hướng Dẫn Chạy Ứng Dụng
+## 🛠️ Hướng Dẫn Chạy Local
 
-1. **Cài đặt thư viện**:
+1. **Truy cập thư mục**:
    ```bash
-   npm install
+   cd d:\AI\Smart-Work-React
    ```
-2. **Chạy bản phát triển**:
-   ```bash
-   npm run dev
-   ```
-3. **Đóng gói sản phẩm**:
-   ```bash
-   npm run build
-   ```
+2. **Khởi động nhanh**:
+   Nhấp đúp vào file `Start_SmartWork.bat`. 
+   Ứng dụng sẽ mở tại: `http://localhost:5173/Smart-Work-App/`
 
 ---
 
 ## 👨‍💻 Developed by Anh Phương
-*Modern Productivity Tools.*
