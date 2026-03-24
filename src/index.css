@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-jakarta bg-mint-light text-slate-700 min-h-screen overflow-hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+  
+  .btn-gradient {
+    @apply bg-gradient-to-br from-sky-deep to-mint-deep text-slate-900 font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98];
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 bg-sky-50 border-2 border-slate-100 rounded-lg outline-none transition-all duration-200 focus:border-sky-pastel focus:ring-4 focus:ring-sky-pastel/20 focus:bg-white;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
